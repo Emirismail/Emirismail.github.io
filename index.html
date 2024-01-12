@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pguard datasets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body { 
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0; 
+        }
+        .header {
+                margin: 0;
+                background-color: #f1f1f1;
+                padding: 0px;
+                text-align: center;
+                background-image: url('./lpr.png');
+                padding: 5px 20px;
+                background-size: cover; 
+                background-repeat: no-repeat;
+                background-position: center -80px;
+                font-size: 24px;
+                color: #f1f1f1;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
+                line-height: 1.5;
+                text-shadow: 4px 4px 4px #000000;
+        }
+        .header img {
+            width: 100%;
+            height: auto; 
+        }
+
+        .nav-bar {
+                display: flex;
+                justify-content: center;
+                background-color: #02a199;
+                overflow: hidden;
+        }
+        .nav-bar a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 20px;
+                text-decoration: none;
+        }
+        .nav-bar a:hover { background-color: #ddd; color: black; }
+        
+        .section { margin: 0px; }
+        
+        #PGuard {
+                background-image: url('./pguard.png');
+                background-size: cover; 
+                width: 100%;
+                height: 620px;
+                color: black;
+                background-repeat: no-repeat;
+                text-align: center;
+                padding: 0px;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+        #PGuard h2 {
+                font-family: 'Helvetica', serif;
+                font-size: 100px;
+                color: #02a199;
+                padding: 0px;
+                margin: 0px;
+        }
+
+        #PGuard hr {
+                border: 2px solid #02a199;
+                width: 30%; 
+                margin: 0; 
+        }
+
+        #PGuard p {
+                font-family: 'Arial', sans-serif;
+                line-height: ;
+                font-size: ;
+                margin: 0;
+                font-size: 24px; 
+                color: white; 
+        }
+
+
+        #Overview {
+                background-size: cover;
+                background-color: #02a199; 
+                width: 100%;
+                height: 244px;
+                color: white;
+                background-repeat: no-repeat;
+                text-align: center;
+                padding: 0px;
+                margin: 0;
+        }
+        #Overview h2 {
+                font-family: 'Helvetica', serif;
+                font-size: 30px;
+                color: white;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                margin: 0px;
+        }
+
+        #Overview h3 {
+                font-family: 'Helvetica', serif;
+                font-size: 20px;
+                color: white;
+                padding-top: 0px;
+                margin: 10px;
+        }
+
+        #Overview h4 {
+                font-family: 'Helvetica', serif;
+                font-size: 20px;
+                color: white;
+                padding-top: 20px;
+                margin: 10px;
+        }
+
+
+        #Overview p {
+                font-family: 'Helvetica', serif;
+                font-size: 20px;
+                color: white;
+                padding: 0px;
+                margin: 10px;
+        }
+
+
+
+
+
+        #Datasets {
+                background-size: cover;
+                background-color: #02a199; 
+                width: 100%;
+                height: 4000px;
+                color: black;
+                background-repeat: no-repeat;
+                text-align: center;
+                padding: 0px;
+                margin: 0;
+        }
+
+        #Downloads {
+                background-size: cover;
+                background-color: #02a199; 
+                width: 100%;
+                height: 244px;
+                color: black;
+                background-repeat: no-repeat;
+                text-align: center;
+                padding: 0px;
+                margin: 0;
+        }
+
+        #Contact {
+                background-size: cover;
+                background-color: #02a199; 
+                width: 100%;
+                height: 140px;;
+                color: black;
+                background-repeat: no-repeat;
+                text-align: center;
+                padding: 0px;
+                margin: 0;
+        }
+        #Overview, #Datasets, #Downloads, #Contact{
+                margin: 0;
+                padding: 0;
+        }
+
+        #PGuard p, #PGuard h2,
+        #Overview h1, #Overview h2, #Overview p, 
+        #Datasets h1, #Datasets h2, #Datasets p, 
+        #Downloads h1, #Downloads h2, #Downloads p,
+        #Contact p, #Contact h2
+        {
+        margin: 0;
+        }
+
+        #Downloads h2 {
+                font-family: 'Helvetica', serif;
+                font-size: 30px;
+                color: white;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                margin: 0px;
+        }
+
+        #Downloads p {
+                font-family: 'Helvetica', serif;
+                font-size: 20px;
+                color: white;
+                margin: 0px;
+        }
+
+        #Downloads p2 {
+                font-family: 'Helvetica', serif;
+                font-size: 20px;
+                color: white;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                margin: 0px;
+        }
+
+        #Contact h2 {
+                font-family: 'Helvetica', serif;
+                font-size: 30px;
+                color: white;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                margin: 0px;
+        }
+
+        .section-separator {
+                height: 8px;
+                background-color: #222222; 
+                width: 100%; 
+        }
+
+        img {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        h3 {
+            font-family: 'Arial', sans-serif;
+            font-size: 30px; 
+            color: #02a199;
+        }
+        h4 {
+            font-family: 'Arial', sans-serif;
+            font-size: 20px; 
+            color: white;
+        }
+
+        p {
+            font-family: 'Arial', serif;
+            font-size: 16px;
+            color: white;
+        }
+
+
+        .row {
+            display: flex;
+            align-items: center; 
+            justify-content: center 40px;
+        }
+        .col-lg-7 {
+                position: relative; 
+                left: 200px; 
+                top: 40px; 
+        }
+        .col-lg-5 {
+                position: relative; 
+                left: 200px; 
+                top: 10px; 
+        }
+        .container {
+                height: 1180px; 
+                width: 100%; 
+        }
+        .square-list {
+            list-style-type: circle; 
+        }
+
+        li {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px; 
+            color: white;
+        }
+        .social-media-links a {
+            color: white; 
+            margin-right: 20px;
+            text-decoration: none; 
+        }
+
+        .social-media-links i {
+            margin-right: 0px;
+            margin-top: 15px; 
+            display: inline-block;
+        }
+        .btn {
+            padding: 10px 30px; 
+            font-size: 16px; 
+            width: 100px; 
+            height: 50px;
+            background-color: #222222;
+            color: white; 
+            font-family: Arial, sans-serif; 
+            border: none;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .btn-group {
+            display: inline-block;
+            position: relative; 
+            top: 50px; 
+            left: 20px; 
+        }
+
+        .footer { 
+                background-color: #2b9442;
+                background-image: url('./lpr.png'); 
+                padding: 2px;
+                background-position: center -340px; 
+                text-align: center;
+                font-size: 18px;
+                color: #f1f1f1; 
+        }
+        
+
+        
+    </style>
+</head>
+<body>  
+
+    <div class="header">
+        <h1>PGUARD ALPR Datasets</h1>
+    </div>
+
+<div class="nav-bar">
+    <a href="#Overview">Overview</a>
+    <a href="#DatasetsSection">Datasets</a>
+    <a href="#Downloads">Downloads</a>
+    <a href="#Contact">Contact</a>
+</div>
+
+<div class="section" id="PGuard">
+    <h2>PGuard </h2>
+    <hr>
+    <p>PGuard is a rugged security robot for multi-terrain applications.</p>
+    <p>PGuard is fully autonomous and self-driving gathering significant amounts of data from the environment in real-time and deters negative behavior.</p>
+    <p>PGuard provides security professionals with a force multiplier through an interface to review events generated from smart “eyes and ears”.</p>
+</div>
+
+<div class="section" id="Overview">
+    <h2>Overview </h2>
+    <h3> Automatic license plate recognition (ALPR) is considered among the cornerstones of video analytics in smart cities, particularly in security-related applications.</h3>
+    <h3> Vast range of applications benefit from this technology such as police surveillance, parking man agement, access control, tolling, and ITS.</h3>
+    <h4>To provide a valuable resource for the ALPR research community, we introduce PGuard ALPR Datasets specifically curated to address the in-the-wild ALPR scenario.</h4>
+</div>
+
+
+
+
+
+<div class="container" id="DatasetsSection" style="background-color: #222222;">
+    <div class="row mb-5 align-items-center">
+        <div class="col-lg-7">
+            <img src="combined_elp.jpg" alt="First Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5">
+            <h3><strong>ELP Dataset</strong></h3>
+            <p>A comprehensive, geographically diverse image dataset for European license plates. </p>
+            <h4><strong>Key features</strong></h4>
+            <ul class="square-list">
+                <li>4744 images, 5000 license plates.</li>
+                <li>20 European countries, 10 vehicle categories.</li>
+                <li>Annotations: bounding box coordinates, four vertices locations, license plate number.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mb-5 align-items-center">
+        <div class="col-lg-7">
+            <img src="combined_pgtlp.jpg" alt="First Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5">
+            <h3><strong>PGTLP Dataset</strong></h3>
+            <p>A diverse image dataset for Tunisian license plates.</p>
+            <h4><strong>Key features</strong></h4>
+            <ul>
+                <li>5000 HD images, 7244 license plates.</li>
+                <li>Multiple license plate per image.</li>
+                <li>Annotations: bounding box coordinates, four vertices locations, license plate number.</li>
+                <li>Areas: parkings, gates, roundabouts, roadsides.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mb-5 align-items-center">
+        <div class="col-lg-7">
+            <img src="combined_pgflp.jpg" alt="First Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5">
+            <h3><strong>PGFLP Dataset</strong></h3>
+            <p>A large and diverse image dataset for French license plates.</p>
+            <h4><strong>Key features</strong></h4>
+            <ul>
+                <li>9011 HD images, 14441 license plates.</li>
+                <li>Multiple license plate per image.</li>
+                <li>Annotations: bounding box coordinates, four vertices locations, license plate number.</li>
+                <li>Areas: parkings, roadsides.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section" id="Downloads">
+    <h2>Downloads </h2>
+    <p>The PGuard ALPR datasets are for non-commercial purposes only.</p>
+    <p2>Please read carefully this license agreement, fill it out, and send it back to the first author:</p2>
+    <p>amir.ismail@eniso.u-sousse.tn </p>
+    <div class="btn-group">
+        <a href="agreement_to_elp.pdf" class="btn btn-primary">ELP</a>
+        <a href="agreement_to_pgtlp.pdf" class="btn btn-primary">PGTLP</a>
+        <a href="agreement_to_pgflp.pdf" class="btn btn-primary">PGFLP</a>
+    </div>
+</div>
+<div class="section-separator"></div>
+<div class="contact-section" id="Contact">
+    <h2>Get in Touch</h2>
+    <p>Email: amir.ismail@eniso.u-sousse.tn</p>
+    <div class="social-media-links">
+        <a href="https://enovarobotics.eu" target="_blank"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://www.facebook.com/enovarobotics" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/enovarobotics/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Made with Love</p>
+</div>
+
+</body>
+</html>
