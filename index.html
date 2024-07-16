@@ -266,7 +266,7 @@
                 top: 10px; 
         }
         .container {
-                height: 800px; 
+                height: 1180px; 
                 width: 100%; 
         }
         .square-list {
@@ -355,10 +355,25 @@
 
 
 <div class="container" id="DatasetsSection" style="background-color: #222222;">
+    <div class="row mb-5 align-items-center">
+        <div class="col-lg-7">
+            <img src="./data/combined_elp.jpg" alt="First Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5">
+            <h3><strong>ELP 1.0 Dataset</strong></h3>
+            <p>A comprehensive, geographically diverse image dataset for European license plates. </p>
+            <h4><strong>Key features</strong></h4>
+            <ul class="square-list">
+                <li>4744 images, 5000 license plates.</li>
+                <li>20 European countries, 10 vehicle categories.</li>
+                <li>Annotations: bounding box coordinates, four vertices locations, license plate number.</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="row mb-5 align-items-center">
         <div class="col-lg-7">
-            <img src="combined_pgtlp.jpg" alt="First Image" class="img-fluid">
+            <img src="./data/combined_pgtlp.jpg" alt="First Image" class="img-fluid">
         </div>
         <div class="col-lg-5">
             <h3><strong>PGTLP Dataset</strong></h3>
@@ -375,7 +390,7 @@
 
     <div class="row mb-5 align-items-center">
         <div class="col-lg-7">
-            <img src="combined_pgflp.jpg" alt="First Image" class="img-fluid">
+            <img src="./data/combined_pgflp.jpg" alt="First Image" class="img-fluid">
         </div>
         <div class="col-lg-5">
             <h3><strong>PGFLP Dataset</strong></h3>
@@ -400,8 +415,9 @@
     <p2>Please read carefully this license agreement, fill it out, and send it back to the first author:</p2>
     <p>amir.ismail@eniso.u-sousse.tn </p>
     <div class="btn-group">
-        <a href="agreement_to_pgtlp.pdf" class="btn btn-primary">PGTLP</a>
-        <a href="agreement_to_pgflp.pdf" class="btn btn-primary">PGFLP</a>
+        <a href="./data/agreement_to_elp.pdf" class="btn btn-primary">ELP</a>
+        <a href="./data/agreement_to_pgtlp.pdf" class="btn btn-primary">PGTLP</a>
+        <a href="./data/agreement_to_pgflp.pdf" class="btn btn-primary">PGFLP</a>
     </div>
 </div>
 <div class="section-separator"></div>
